@@ -1,0 +1,58 @@
+.view-movie-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 70%;
+    height: 650px;
+  }
+  .view-movie__column {
+    width: 40%;
+    
+  }  
+  .view-movie__img {
+    width: 100%;
+    margin-top: 54px;
+  }
+  .view-movie-overview {
+    width: 600px;
+    margin-left: 40px;
+    text-align: left;
+  }
+  .view-movie__overview {
+    width: 520px;
+    color: #f3f3f3;
+    font-size: 20px;
+  }
+  .view-movie__sorts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .movie-sort{
+    color: #fff;
+    font-size: 14px;
+  }
+
+  @media  (max-width: 768px) {
+    .view-movie-overview{
+      width: 52% ;
+    }
+    .view-movie__overview{
+      width: 100%;
+    }
+    .view-movie__img{
+      width: 48%;
+    }
+    .movie-sort{
+      font-size: 10px ;
+    }
+  }
+
+  @media(max-width: 620px){
+    .similar-card{
+      width: 121px ;
+    }
+    .view-movie__overview{
+      width: 400px;
+    }
+  }

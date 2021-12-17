@@ -1,0 +1,42 @@
+@media (max-width : 991.5px) {
+    .header {
+        padding: 15px 16px;
+    }
+
+    .movielist .row {
+        padding: 0 16px;
+    }
+
+    .catalog-btn {
+        width: 100px;
+    }
+
+    .view-movie-content {
+        width: 90%;
+    }
+
+    .view-movie-overview {
+        width: 522px;
+    }
+};
+
+@media  (max-width: 768px) {
+    .slider-card {
+        width: 70%;
+        left: 8px;
+    }
+    .slider-card__img {
+        width: 47%;
+    }
+    .slider-card__overview{
+        width: 388px;
+    }
+    .movie{
+        width: 101px;
+        height: 296px;
+    }
+    .movie-text{
+        font-size: 12px;
+    }
+    
+}

@@ -1,0 +1,15 @@
+.active-genre{
+    background-color: blue;
+  }
+  .genres-link{
+    color:black;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: cadetblue;
+    text-decoration: none;
+    display: block;
+    margin: 10px;
+    text-align: center;
+  }.genres{
+    position: fixed;
+   }  

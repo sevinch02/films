@@ -1,0 +1,27 @@
+.search-card{
+    /* background-color: aqua; */
+    width: 450px;
+    margin-top: 40px;
+    border: 2px solid #fff;
+    padding: 10px 12px;
+      }
+  .search-name{
+    width: 400px;
+  }
+  .search-years{
+    width: 300px;
+  }
+  .search-genres{
+    width: 300px;
+  }
+  .search-btn{
+      border: none;
+      padding: 8px 12px;
+      outline: none;
+      margin-top: 13px;
+      border-radius: 12px;
+  }
+  .found-btn{
+      background-color: slateblue;
+      margin-left: 10px;
+  }
