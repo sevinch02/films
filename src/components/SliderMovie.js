@@ -1,8 +1,7 @@
-import React, {useEffect} from 'react'
+import React, {useEffect,useState} from 'react'
 import SwiperCore from 'swiper';
 import {Autoplay} from 'swiper';
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {useState} from "react/cjs/react.development";
 import apiCalls from '../config/api';
 
 const IMAGE_URL = 'https://image.tmdb.org/t/p/w500';
