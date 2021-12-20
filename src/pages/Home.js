@@ -20,12 +20,12 @@ const Home = () => {
           <Header/>
       </div>    
   
-        {/* {isLoading    ? <Loader/> : }    */}
+        
         <SliderMovie  type="upcoming"/>
-      <div className="container">
-       <Movielist type='upcoming' title='Upcoming movies'/> 
-        <Movielist type='top_rated' title='Top movies'/>
-        <Movielist type='popular' title='Popular movies'/> 
+        <div className="container">
+         <Movielist type='upcoming' title='Upcoming movies'/> 
+         <Movielist type='top_rated' title='Top movies'/>
+         <Movielist type='popular' title='Popular movies'/> 
       </div>
 
     </div>

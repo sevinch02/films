@@ -12,11 +12,8 @@ const Bigfilter = () => {
  const [ ,setTotal] =useState([]);
  const [, setError] = useState([])
   const options = [
-    {value: 'popularity',label: 'popularity'},
-    {value: 'revenue', label: 'revenue'},
-    {value: 'release_date', label: 'release date'},
-    {value: 'original_title', label: ' title'},
-    {value: 'vote_average', label: 'vote average' }
+    {value: 'popularity',label: 'Popularity'},
+    {value: 'original_title', label: 'Title'},
 
   ];
   const yearoptions = [

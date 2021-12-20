@@ -25,7 +25,8 @@ const Movielist = ({type, title}) => {
     <div className="movielist"> 
       <div className="row" >
         <h2 className="movie-title">{title}</h2>
-       <button className="catalog-btn"> <Link className="catalog-btn_link" to="/catalog" >All Movies </Link> </button>
+       <button className="catalog-btn"> 
+         <Link className="catalog-btn_link" to="/catalog" >All Movies </Link> </button>
       </div>
       {!error && <Swiper
                 spaceBetween={30} slidesPerView={6}>

@@ -101,11 +101,12 @@ code {
   left: 25px;
   color:#fff;
 }
-/* .view-link{
-  position: relative;
-} */
+
 .movie-title {
   color: beige;
+  font-size: 18px;
+  width: 90%;
+  margin: 0;
 }
 .movie-text{
   width: 180px;
@@ -136,6 +137,7 @@ code {
 .movielist {
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 50px;
 }
 /*=========*/
 .similar-card {
@@ -250,14 +252,18 @@ justify-content: space-between
 .catalog-btn{
   border: none;
   outline: none;
-  padding: 0 12px;
+  padding: 10px 12px;
   width: 80px;
-  height: 50px;
+  border-radius: 8px;
+  background-color: #9198e5;
+}
+.catalog-btn:active{
+  background-color: transparent;
 }
 .catalog-btn_link{
   text-decoration: none;
   font-weight: 400;
-  color: #100e19;
+  color: #fff;
 }
 .view-movie-content {
     display: flex;
