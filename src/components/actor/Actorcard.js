@@ -13,7 +13,7 @@ function ActorImg(props) {
 }
 const Actorcard = (props) => {
   return (  
-    <a target='_blank' className='actor__link' href={`https://en.wikipedia.org/wiki/${props.actorsobj.name}`}>  
+    <a target="_blank" rel="noreferrer"  onClick={window.open()} className='actor__link' href={`https://en.wikipedia.org/wiki/${props.actorsobj.name}`}>  
        <div className="actorcard">
           <ActorImg profile={props.actorsobj.profile_path} />
           <div className="actorcard-text">
