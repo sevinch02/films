@@ -1,11 +1,10 @@
 import {useEffect, useState} from "react";
-import Header from "../../components/Header";
-import Actorcard from "../../components/actor/Actorcard";
-import Similar from "../../components/similar/Similar";
-import apiCalls from '../../config/api';
+import Header from "../components/Header";
+import Actorcard from "../components/actor/Actorcard";
+import Similar from "../components/similar/Similar";
+import apiCalls from '../config/api';
 import { useParams } from "react-router-dom";
-// import './viewmovie.css'
-import {Swiper , SwiperSlide} from 'swiper/react'
+import {Swiper , SwiperSlide} from 'swiper/react';
 
 const IMAGE_URL = 'https://image.tmdb.org/t/p/w500';
 
@@ -78,25 +77,31 @@ const ViewMovie = () => {
   return (
     <div className="container">
       <Header/>
+      <button onClick={goBack} className="back" > Prev</button>
+      
       <div className="view-movie-content">
         <div className="view-movie__column">
-          <button onClick={goBack}> back</button>
           <img className='view-movie__img' src={IMAGE_URL + movieInfo.poster_path} alt={movieInfo.title}/>
         </div>
+        
+
         <div className="view-movie-overview">
-        <h1 className="movie-title">
-            {movieInfo.title}
-          </h1>
+      {movieInfo.genres &&  movieInfo.genres.map(el => 
+        <span key={el.id} className="genres" >
+           {el.name} </span>)}
+         
+        <h1 className="movie-title view-movie__title">{movieInfo.title}</h1>
+
           <div className="view-movie__sorts">
             <h4 className="movie-sort">
-              Popularity: {movieInfo.popularity}
+             <mark> Popularity: </mark> {movieInfo.popularity}
             </h4>
             <h4 className="movie-sort">
-              Time: {movieInfo.runtime + ' minuts'}            
+            <mark> Time:</mark> {movieInfo.runtime + ' minuts'}            
             </h4>
             <h4 className="movie-sort">
-               budget: {movieInfo.budget  + '  $'}</h4>
-              <h4 className="movie-sort">Vote count : {movieInfo.vote_count}
+            <mark> budget: </mark> {movieInfo.budget  + '  $'}</h4>
+              <h4 className="movie-sort"> <mark> Vote count:</mark> {movieInfo.vote_count}
           </h4>
           </div>
           <p className="view-movie__overview">
@@ -113,7 +118,7 @@ const ViewMovie = () => {
         Similar Films</h4>
       <div className="row">
         
-        {error? error: {newSimilar}}
+        {error? error: newSimilar}
       </div>
     </div>
   );
