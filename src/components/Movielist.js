@@ -2,7 +2,7 @@ import React from 'react';
 import {useState, useEffect} from 'react';
 import {Swiper, SwiperSlide} from 'swiper/react';
 import Movie from './Movie';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom'
 import apiCalls from '../config/api';
 const Movielist = ({type, title}) => {
 

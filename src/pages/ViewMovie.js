@@ -19,14 +19,11 @@ const ViewMovie = () => {
 
   const {id} = useParams();
 
-    console.log(id);
-  
     useEffect(() => {
       const detail = async () => {
         try {
           const data = await apiCalls.detail(id);
           setMovieInfo(data);
-          console.log(data)
         } catch (error) {
             setError(error.message);
         };
@@ -59,7 +56,6 @@ const ViewMovie = () => {
  { actorsInfo.map((el, i) => (
     <SwiperSlide  key={i}>
       <Actorcard actorsobj={el}
-      // key={i}
       id={el.id}
       name={el.original_name}
       imgLink={el.profile_path}
@@ -68,9 +64,8 @@ const ViewMovie = () => {
     </SwiperSlide>
   ))}
 </Swiper>
-  const newSimilar = similar.map((element, index) => 
-  <Similar key={index} 
-  similar={element}/>);
+  const newSimilar = similar.map((element, index) => <Similar key={index} similar={element}/>);
+
   function goBack() {
     window.history.back();
   }
@@ -86,7 +81,7 @@ const ViewMovie = () => {
         
 
         <div className="view-movie-overview">
-      {movieInfo.genres &&  movieInfo.genres.map(el => 
+      { movieInfo.genres &&  movieInfo.genres.map(el => 
         <span key={el.id} className="genres" >
            {el.name} </span>)}
          
@@ -118,7 +113,7 @@ const ViewMovie = () => {
         Similar Films</h4>
       <div className="row">
         
-        {error? error: newSimilar}
+        {error ? error : newSimilar}
       </div>
     </div>
   );

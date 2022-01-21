@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="row">
-      <Link className="header-link" to="">  Movies </Link>
+      <Link className="header-link" to="/">  Movies </Link>
       <nav className="navbar">
         <Link className="navbar__link" to="/catalog">Catalog</Link>
         <Link className="navbar__link" to="/search">Search</Link>

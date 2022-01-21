@@ -31,6 +31,9 @@ mark{
   display: flex;
   flex-wrap: wrap;
 }
+.link{
+  text-decoration: none;
+}
 
 .header {
   padding: 15px 0;

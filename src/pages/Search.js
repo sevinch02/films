@@ -4,14 +4,10 @@ import Bigfilter from '../../src/components/bigfilter/Bigfilter'
 
 const Search = () => {
   return (
-   
       <div className="container">
         <Header/>
-        
-          <Bigfilter/>
-      
+        <Bigfilter/>
       </div>
-  
   );
 };
 
